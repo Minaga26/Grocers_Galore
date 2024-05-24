@@ -1,0 +1,513 @@
+:root {
+    --color-grey: grey;
+    --color-black: black;
+    --color-white: white;
+    --color-light-gray: #dcdcdc;
+    --color-hover: #ffcb86;
+    --color-azure: azure;
+    --color-action-text: #f2f2f2;
+    --color-action-hover: #ffa42c;
+    --color-input-bg: #f1f1f1;
+    --color-button-bg: #2196F3;
+    --color-button-hover-bg: var(--color-hover);
+    --color-banner-text: #907d65;
+    --color-img-bg: whitesmoke;
+    --color-img-border: gray;
+    --color-divider: bisque;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: arial;
+}
+
+.grid-container0 {
+    display: grid;
+    grid-template-columns: 760px auto auto;
+    border-radius: 35px;
+    margin: 5px;
+    border-style: solid;
+    color: var(--color-grey);
+    background-color: var(--color-black);
+    border-width: 2px;
+    position: fixed;
+    z-index: 1000;
+    margin-left: 15px;
+}
+
+.logo {
+    height: 40px;
+    border: var(--color-light-gray);
+    border-radius: 40px;
+    margin: 5px;
+}
+
+/* Style the top navigation bar */ /* to be included in ham menu */ 
+.topnav {
+    padding: 0px;
+    border-radius: 6px;
+}
+
+/* Adjust spacing between list items */
+nav ul li {  
+    display: inline;
+    margin: 13px; 
+}
+
+/* Style the top navigation links */
+.topnav a {
+    color: var(--color-white);
+    text-align: center;
+    padding: 0px, 0px;
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: large;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    color: var(--color-hover);
+    font-size: 19px; 
+}
+
+.topnav h2 {
+    margin-bottom: -10px;
+    margin-top: -5px;
+}
+
+/* Dropdown Menu CSS */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--color-black);
+    min-width: 130px;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.dropdown-content a {
+    color: var(--color-white);
+    padding: ;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--color-light-gray);
+    color: var(--color-azure);
+    padding: 3px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* edit the action buttons */ /* to be included in ham menu */   
+.action_buttons {
+    display: flex;
+}
+
+.material-symbols-outlined {
+    text-decoration: none;
+    color: var(--color-action-text);
+    padding-right: 20px;
+    padding-top: 12px;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+}
+
+/* buttons hover edit */
+.material-symbols-outlined:hover {
+    color: var(--color-action-hover);
+}
+
+form.example input[type=text] {
+    padding: 5px;
+    font-size: 10px;
+    border: 1px solid var(--color-grey);
+    float: left;
+    width: 80%;
+    background: var(--color-input-bg);
+    border-radius: 10px;
+    margin: 12px;
+}
+
+form.example button {
+    width: 20%;
+    background: var(--color-button-bg);
+    color: var(--color-white);
+    font-size: 20px;
+    border: 1px solid var(--color-grey);
+    border-left: none;
+    cursor: pointer;
+    border-radius: 12px;
+    margin: 20px;
+}
+
+/*Hamburg */
+.hamburg {
+    display: none;
+}
+
+form.example button:hover {
+    background-color: var(--color-button-hover-bg);
+}
+
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.topban {
+    background-image: url(bgimg1.png);
+    object-fit: contain;
+    height: 300px;
+    animation-duration: 2s;
+}
+
+/*top banner*/
+.topban h1 {
+    padding: 130px;
+    font-size: 60px;
+    font-family: arial;
+    color: var(--color-banner-text);
+    margin-left: 350px;
+    animation-name: Y;
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
+
+@keyframes Y {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.div1 img {
+    height: 400px;
+    width: 500px;
+    margin-left: 20px;
+    background-color: var(--color-img-bg);
+    border: 2px dotted var(--color-img-border);
+    border-radius: 100px;
+}
+
+.hdparent {
+    display: flex;
+    color: var(--color-black);
+    justify-content: center;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: -50px;
+}
+
+.cls1 {
+    margin-top: 20px;
+    height: 3px;
+    width: 200px;
+    background-color: var(--color-divider);
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+/*--Main grid--*/
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-left: 40px;
+    margin-right: 0px;
+}
+.div2 img{
+   height: 100px;
+   width: 160px;
+   float:right;
+   margin:0px 0px 0px -20px;
+}
+.div3 img{
+    height: 100px;
+    width: 160px;
+    float:right;
+    margin:0px 0px 0px -20px;
+}
+.div4 img{
+    height: 100px;
+    width: 160px;
+    float:left;
+    margin:0px 0px 0px -20px;
+}
+.div5 img{
+    height: 100px;
+    width: 160px;
+    float:left;
+    margin:0px 0px 0px -20px;
+}
+.div1 {
+    grid-area: 2 / 3 / 5 / 4;
+}
+
+.div2 {
+    grid-area: 2 / 4 / 2 / 6;
+    padding: 20px;
+    font-size: 20px;
+    text-align: right;
+}
+
+.div3 {
+    grid-area: 4 / 4 / 5 / 6;
+    padding: 20px;
+    font-size: 20px;
+    text-align: right;
+}
+
+.div4 {
+    grid-area: 2 / 1 / 2 / 3;
+    margin-top: 18px;
+    font-size: 20px;
+}
+
+.div5 {
+    grid-area: 4 / 1 / 5 / 3; 
+    margin-top: 18px;
+    font-size: 20px;
+   
+}
+.dairy{
+  display: flex;
+  flex-wrap:wrap;
+  margin:60px;
+  justify-content: center;
+  gap:40px;
+}
+
+
+.card1 {
+  width: 230px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 20px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.card1 img {
+  width: 100%;
+  height:140px;
+  background-color:#ffbc3c47;
+}
+
+.product-info {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.product-name {
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.product-price {
+  font-size: 20px;
+  color:rgba(0,0,0,0.7);
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom:10px;
+  text-align:center;
+}
+
+.cart-btn {
+  width: 160px;
+  margin-left:10px;
+  padding:10px;
+  background-color: whitesmoke;
+  color:black;
+  border: none;
+  border-radius: 20px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cart-btn:hover {
+  background-color:#ffc961;
+}
+
+.bg{
+  height: max-content;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: url(bgimg1.png);
+  background-size: cover;
+  margin:20px; 
+}
+.divider1{
+  background: rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color:#3f3b39;
+  padding:60px;
+  height:200px;
+  font-size:45px;
+  font-family:arial;
+}
+
+footer{
+  position: relative;
+  width:100%;
+  height: auto;
+  padding: 50px 70px;
+  background:#ddd;
+  text-align: justify;
+ }
+ footer .footermain{
+     width: 100%;
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-gap:70px;
+     font-family: arial;
+ }
+ .footermain p{
+     font-family:arial;
+     line-height: 20px;
+ }
+ .links{
+     margin-left: 60px;
+ }
+ .links ul li a{
+     line-height:20px;
+     text-decoration: none;
+     color: black;
+     list-style-type: none;
+     font-family: arial;
+ }
+ 
+ .bottomban{
+     margin-bottom:-30px;
+     text-align: center;
+     margin-top:50px;
+     background-color:whitesmoke;
+     padding:20px;
+      border-radius:5px;
+     
+ }
+ .form {
+     line-height:25px;
+     font-family: arial;
+ }
+ 
+ .icons{
+     margin-top:30px;
+     column-gap: 20px;
+     font-size: 20px;
+ }
+ 
+
+ /*---Breakpoint---*/
+
+
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+      .hamburg{
+        display: flex;
+    }
+    /* For mobile phones: */
+   .grid-container0{
+    display:flex;
+    gap:85px;
+    z-index: 1000;
+    margin-left: 5px;
+  }
+    .topnav {
+    display: none;
+  }
+    form.example input[type=text] {
+  display: none;
+  }
+  .dropdown-content{
+    line-height:30px;
+    padding:10px;
+    margin-left:-80px;
+    text-align:center;
+   
+}
+.dropdown-content li{
+    list-style: none;
+}
+.dropdown-content li a:hover{
+    background-color:#363636;
+    border-radius:20px;
+}
+   
+  .topban{
+    height:200px;
+    width:100%;
+  }
+  .topban h1{
+    display:none;
+  }
+  .hdparent h2{
+    font-size:30px;
+    margin-bottom:70px 
+  }
+  .cls1{
+    margin-top:10px;
+    width:70px
+  }
+  .parent{
+    display:flex;
+    flex-direction:column;
+    
+  }
+  .div1 img{
+    height:300px;
+    width:300px;
+    border-radius:20px
+  }
+  .divider1{
+    font-size:30px;
+  }
+  .Products-container{
+    display:flex;
+    flex-direction:column;
+  }
+ .footer{
+  font-size: small;
+ }
+ footer .footermain{
+  display:flex;
+  flex-direction:column;
+}
+.links{
+  margin-bottom:-30px;
+  margin-top:-20px;
+  margin-left: 10px
+}
+ .links h1{
+  margin-left:-10px;
+  margin-bottom:5px;
+}
+
+}
